@@ -72,14 +72,22 @@ body {
     z-index: 1;
 }
 
+.peleador-izquierda img, .peleador-derecha img{
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    display: block;
+}
+
 .peleador-izquierda img {
-    transform: scale(1.2) translateX(-15%);
+    transform: scale(1.1) translateX(-10%);
     filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.7));
 }
 
 .peleador-derecha img {
-    transform: scale(1.2) translateX(15%);
+    transform: scale(1.1) translateX(10%);
     filter: drop-shadow(-5px 5px 15px rgba(0,0,0,0.7));
+    max-width: 320px;
 }
 
 .tabla {
