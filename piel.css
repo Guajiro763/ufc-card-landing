@@ -156,3 +156,14 @@ body {
 #broadcastingRights img[alt="Paramount+ logo"] {
     height: 55px;
 }
+
+@media (max-width: 900px) {
+    .contenedor-combate {
+        flex-direction: column; /* Apila los elementos en vertical en pantallas pequeñas */
+    }
+    
+    .peleador-izquierda img, .peleador-derecha img {
+        max-width: 300px; /* Achica los peleadores en el celular */
+        transform: scale(1) translateX(0); /* Quita el desplazamiento lateral para que no se salgan de la pantalla */
+    }
+}
