@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;700&family=Lora:ital,wght@1,400&display=swap');
 
 body {
     background-color: #111;
     margin: 0;
-    font-family: 'Oswald', sans-serif; 
 }
 
 #header {
@@ -37,15 +36,6 @@ body {
     height: auto;
     display: block;
     margin: 0px;
-}
-
-#hero p {
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.6;
 }
 
 #faceToFace {
@@ -123,10 +113,10 @@ body {
 .tabla th {
     color: #e2011a;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px;
+    font-size: 35px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .tabla .titulo-dato {
@@ -149,10 +139,15 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.resumen {
-    padding: 40px 20px;
+#hero p, .resumen p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #e0e0e0;
+    max-width: 71rem;
+    margin: 3rem auto;
     text-align: center;
-    color: white;
 }
 
 #broadcastingRights {
@@ -165,12 +160,15 @@ body {
 }
 
 #broadcastingRights img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
 #broadcastingRights img[alt="Paramount+ logo"] {
     height: 55px;
+}
+#broadcastingRights img[alt="ufc logo"] {
+    height: 40px;
 }
 
 @media (max-width: 900px) {
@@ -191,3 +189,63 @@ body {
     }
 }
 
+.countdown-container {
+    text-align: center;
+    background-color: #161616;
+    border-top: 3px solid #e2011a;
+    border-bottom: 3px solid #e2011a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.countdown-title {
+    color: #ffffff;
+    font-family: 'Lora', sans-serif;
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.time-block {
+    background-color: #000000;
+    padding: 25px 20px;
+    border-radius: 8px;
+    min-width: 100px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.time-block span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 85px;
+    color: #e2011a;
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.time-block p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666666;
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+}
